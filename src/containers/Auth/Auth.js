@@ -45,7 +45,7 @@ export default class Auth extends Component {
     }
     try{
 
-      const response =  axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCx0ki8imySAraG2RiAZZBlusDDioiduNg', authData)
+       axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCx0ki8imySAraG2RiAZZBlusDDioiduNg', authData)
 
     }catch(e){
       console.log(e)
@@ -60,7 +60,7 @@ export default class Auth extends Component {
     }
     try{
 
-      const response =  axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCx0ki8imySAraG2RiAZZBlusDDioiduNg', authData)
+       axios.post('https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCx0ki8imySAraG2RiAZZBlusDDioiduNg', authData)
 
     }catch(e){
       console.log(e)
@@ -137,7 +137,7 @@ export default class Auth extends Component {
     return (
       <div className={classes.Auth}>
         <div>
-          <h1>Авторизация</h1>
+          <h1>Autorization</h1>
 
           <form onSubmit={this.submitHandler} className={classes.AuthForm}>
 
@@ -148,7 +148,7 @@ export default class Auth extends Component {
               onClick={this.loginHandler}
               disabled={!this.state.isFormValid}
             >
-              Войти
+              Log In
             </Button>
 
             <Button
@@ -156,7 +156,7 @@ export default class Auth extends Component {
               onClick={this.registerHandler}
               disabled={!this.state.isFormValid}
             >
-              Зарегистрироваться
+              Registration
             </Button>
           </form>
         </div>

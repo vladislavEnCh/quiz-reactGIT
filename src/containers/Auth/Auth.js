@@ -14,7 +14,7 @@ export default class Auth extends Component {
         value: '',
         type: 'email',
         label: 'Email',
-        errorMessage: 'Введите корректный email',
+        errorMessage: 'Uncorrect email',
         valid: false,
         touched: false,
         validation: {
@@ -25,8 +25,8 @@ export default class Auth extends Component {
       password: {
         value: '',
         type: 'password',
-        label: 'Пароль',
-        errorMessage: 'Введите корректный пароль',
+        label: 'password',
+        errorMessage: 'Uncorrect password',
         valid: false,
         touched: false,
         validation: {
